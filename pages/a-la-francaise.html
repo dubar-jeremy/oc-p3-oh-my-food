@@ -6,26 +6,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/d966140df4.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../css/spinner.css">
+    <link rel="stylesheet" href="../css/root.css">
+    <link rel="stylesheet" href="../css/menu.css">
+    <link rel="stylesheet" href="../css/footer.css">
     <title>Menu - A la française</title>
 </head>
 
 <body>
     <header>
-        <div>
-            <i class="fa-regular fa-heart"></i>
-            <img src="Maquette Ohmyfood/images/logo/ohmyfood.png">
-        </div>
-        <div>
-            <img src="Maquette Ohmyfood//images/restaurants/a-la-francaise.jpg">
-        </div>
+        <a href="../pages/home.html">
+            <i class="fa-solid fa-arrow-left-long arrow"></i>
+        </a>
+        <img src="/images/logo/ohmyfood.png" class="header__logo">
     </header>
     <main>
-        <section>
-            <h2>Le délice des sens</h2>
-            <i class="fa-regular fa-heart"></i>
+        <img src="/images/restaurants/a-la-francaise.jpg" class="restaurant-image">
+        <section class="menu-list">
+            <div class="menu-liste__title">
+                <h1>A la française</h1>
+                <div class="menu-list-item-container">
+                    <i class="fa-regular fa-heart icon-empty"></i>
+                    <i class="fa-solid fa-heart icon-filled"></i>
+                </div>
+            </div>
             <div>
-                <h3>Entrée</h3>
                 <div class="container">
+                    <h2 class="menu-list__subtitle">ENTRÉES</h2>
                     <div class="menu-item">
                         <div class="menu-item-description">
                             <div>
@@ -33,7 +41,7 @@
                                 <p>Assaisonné au yuzu</p>
                             </div>
                             <div class="menu-item-price">
-                                <p>25</p>
+                                <p class="price">25€</p>
                             </div>
                         </div>
                         <div class="menu-item-icon-box">
@@ -47,7 +55,7 @@
                                 <p>Et sa farandole de petits légumes</p>
                             </div>
                             <div class="menu-item-price">
-                                <p>35e</p>
+                                <p class="price">35€</p>
                             </div>
                         </div>
                         <div class="menu-item-icon-box">
@@ -61,7 +69,7 @@
                                 <p>Au truffles</p>
                             </div>
                             <div class="menu-item-price">
-                                <p>20e</p>
+                                <p class="price">20€</p>
                             </div>
                         </div>
                         <div class="menu-item-icon-box">
@@ -71,8 +79,8 @@
                 </div>
             </div>
             <div>
-                <h3>Plats</h3>
                 <div class="container">
+                    <h2 class="menu-list__subtitle">PLATS</h2>
                     <div class="menu-item">
                         <div class="menu-item-description">
                             <div>
@@ -80,7 +88,7 @@
                                 <p>Et sa crème de truffe</p>
                             </div>
                             <div class="menu-item-price">
-                                <p>40e</p>
+                                <p class="price">40€</p>
                             </div>
                         </div>
                         <div class="menu-item-icon-box">
@@ -94,7 +102,7 @@
                                 <p>Et ses légumes de saison</p>
                             </div>
                             <div class="menu-item-price">
-                                <p>35e</p>
+                                <p class="price">35€</p>
                             </div>
                         </div>
                         <div class="menu-item-icon-box">
@@ -108,7 +116,7 @@
                                 <p>Et sa purée de panais</p>
                             </div>
                             <div class="menu-item-price">
-                                <p>44e</p>
+                                <p class="price">44€</p>
                             </div>
                         </div>
                         <div class="menu-item-icon-box">
@@ -118,8 +126,8 @@
                 </div>
             </div>
             <div>
-                <h3>Desserts</h3>
                 <div class="container">
+                    <h2 class="menu-list__subtitle">DESSERTS</h2>
                     <div class="menu-item">
                         <div class="menu-item-description">
                             <div>
@@ -127,7 +135,7 @@
                                 <p>Du chef</p>
                             </div>
                             <div class="menu-item-price">
-                                <p>18e</p>
+                                <p class="price">18€</p>
                             </div>
                         </div>
                         <div class="menu-item-icon-box">
@@ -141,7 +149,7 @@
                                 <p>Revisitée</p>
                             </div>
                             <div class="menu-item-price">
-                                <p>22e</p>
+                                <p class="price">22€</p>
                             </div>
                         </div>
                         <div class="menu-item-icon-box">
@@ -155,7 +163,7 @@
                                 <p>A la noisette</p>
                             </div>
                             <div class="menu-item-price">
-                                <p>23e</p>
+                                <p class="price">23€</p>
                             </div>
                         </div>
                         <div class="menu-item-icon-box">
@@ -164,29 +172,29 @@
                     </div>
                 </div>
             </div>
-            <div>
-                <button>Commander</button>
+            <div class="order-container">
+                <button class="order-btn">Commander</button>
             </div>
         </section>
     </main>
     <footer>
         <div>
-            <h4>ohmyfoood</h4>
+            <h4 class="footer-title">ohmyfoood</h4>
         </div>
-        <div>
-            <div>
-                <i class="fa-regular fa-heart"></i>
-                <p>Proposer un restaurant</p>
+        <div class="footer-links">
+            <div class="footer-link-container">
+                <i class="fa-solid fa-utensils footer-icon"></i>
+                <a href="#" class="footer-link">Proposer un restaurant</a>
             </div>
-            <div>
-                <i class="fa-regular fa-heart"></i>
-                <p>Devenir partenaire</p>
+            <div class="footer-link-container">
+                <i class="fa-hands-helping fas footer-icon"></i>
+                <a href="#" class="footer-link">Devenir partenaire</a>
             </div>
-            <div>
-                <p>Mention légales</p>
-            </div>
-            <div>
-                <p>Contact</p>
+            <div class="footer-link-container">
+                <a href="#" class="footer-link">Mention légales</a>
+            </div class="footer-link-container">
+            <div class="link-container">
+                <a href="#" class="footer-link">Contact</a>
             </div>
         </div>
     </footer>

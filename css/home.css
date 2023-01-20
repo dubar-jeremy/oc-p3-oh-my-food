@@ -9,7 +9,6 @@ header {
     display: flex;
     justify-content: center;
     background: var(--white);
-    border: 1px solid blue;
     padding: 1em;
     z-index: 1;
 }
@@ -216,43 +215,6 @@ header {
     -webkit-text-fill-color: transparent;
 }
 
-/* Footer */
-
-footer {
-    padding: 1em;
-    color: var(--white);
-    background: var(--grey-3);
-    padding: 1em;
-}
-
-.footer-title {
-   margin-bottom: 1em;
-   font-size: 1em;
-}
-
-.footer-link-container {
-    display: flex;
-    gap: 1em;
-    margin-bottom: 0.2em;
-}
-
-.footer-icon {
-    width: 10px;
-    height: 10px;
-}
-
-.footer-link:hover {
-    text-decoration: underline;
-}
-
-/* Tablets */
-
-@media (min-width: 768px) {
-    /* Hero */
-    /* .hero {
-        height: 100vh;
-    } */
-}
 
 @media (min-width: 1024px) {
         /* section ordering-steps */
@@ -296,16 +258,4 @@ footer {
         .card {
             width: 33%;
         }
-
-        /* Footer */
-
-        .footer-title {
-            text-align: center;
-        }
-
-        .footer-links {
-            display: flex;
-            justify-content: space-evenly;
-        }
-
 }

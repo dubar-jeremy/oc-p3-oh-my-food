@@ -1,0 +1,230 @@
+header {
+    position: sticky;
+    top: 0;
+    display: flex;
+    background: var(--white);
+    padding: 1em;
+    z-index: 2;
+    width: 100%;
+    align-items: center;
+}
+
+.arrow {
+    align-self: center;
+}
+
+.arrow:hover {
+    cursor: pointer;
+}
+
+.header__logo {
+    width: 50%;
+    max-width: 200px;
+    height: auto;
+    margin: 0 auto;
+}
+
+
+/* Restaurant image */
+
+
+.restaurant-image {
+    width: 100%;
+    max-height: 250px;
+    object-fit: cover;
+}
+
+
+/* main */
+
+main {
+    position: relative
+}
+
+/* menu list */
+
+.menu-list {
+    width: 100%;
+    border-radius: 1.5em 1.5em 0 0;
+    background: whitesmoke;
+    padding: 1em;
+    position: relative;
+    margin-top: -4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.menu-liste__title {
+    display: flex;
+    align-items: center;
+}
+
+.menu-list-item-container {
+    flex: 1;
+    position: relative;
+}
+
+.icon-empty,
+.icon-filled {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.icon-filled {
+    opacity: 0;
+}
+
+.menu-list-item-container:active .icon-empty {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.menu-list-item-container:active .icon-filled {
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+    background-image: linear-gradient(162deg, var(--pink) 0%, var(--purple) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+/* container "entrée/plat/desserts" */
+
+.menu-list__subtitle {
+    font-family: "Roboto-light";
+    font-size: 1em;
+    position: relative;
+    width: max-content;
+    margin-bottom: 1em;
+}
+
+.menu-list__subtitle::before {
+    content: "";
+    width: 75%;
+    height: 5px;
+    background-color: #99e2d0;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+}
+
+
+
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    margin: 1em 0;
+    opacity: 0;
+    animation: slideup 1s forwards;
+    animation-fill-mode: forwards;
+
+}
+
+/* Indique comment la propriété opacity doit etre modifiée au fil du temps de l'animation */
+
+
+@keyframes slideup {
+    from {
+      transform: translatey(20px);
+      opacity: 0%;
+    }
+    to {
+      transform: translatey(0px);
+      opacity: 100%;
+    }
+  }
+
+
+
+/* Joue l'animation avec un délais de retard pour chaque item  */
+.menu-item:nth-child(2) {
+    animation-delay: 500ms;
+}
+
+.menu-item:nth-child(3) {
+    animation-delay: 600ms;
+}
+
+.menu-item:nth-child(4) {
+    animation-delay: 700ms;
+}
+
+.menu-item-description {
+    flex: 1;
+    display: flex;
+    padding: 1em;
+    justify-content: space-between;
+    background: var(--white);
+    border-radius: 0.5em;
+   
+}
+
+.menu-item-name {
+    font-family: 'Roboto-bold';
+    font-size: 1em;
+}
+
+.menu-item-price {
+    align-self: flex-end;
+}
+
+.price {
+    font-family: 'Roboto-Bold';
+}
+
+.menu-item-icon-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.4s ease-in-out, width 0.4s ease-in-out, opacity 0.4s ease-in-out;
+    width: 0;
+    background-color: white;
+    border-radius: 0 0.5em 0.5em 0em;
+}
+
+.menu-item-check {
+    color: white;
+    transform: rotate(0deg);
+    transition: transform 0.7s;
+    opacity: 0;
+}
+
+.menu-item:hover {
+    cursor: pointer;
+}
+
+.menu-item:hover .menu-item-icon-box {
+    background-color: var(--green);
+    width: 5em;
+
+}
+
+.menu-item:hover .menu-item-check {
+    transform: rotate(360deg);
+    opacity: 1;
+}
+
+.order-container {
+    display: flex;
+    justify-content: center;
+}
+
+.order-btn {
+    color: white;
+    padding: 1em;
+    text-align: center;
+    background: #ff79da;
+    background: linear-gradient(162deg, #ff79da 0%, #9356dc 100%);
+    width: 50%;
+    white-space: nowrap;
+    border:none;
+    border-radius: 2em;
+    box-shadow: rgb(149 157 165 / 20%) 0px 8px 24px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    margin: 1em 0;
+}

@@ -160,12 +160,25 @@ main {
     justify-content: space-between;
     background: var(--white);
     border-radius: 0.5em;
+    overflow: hidden;
    
+}
+
+.menu-text {
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 .menu-item-name {
     font-family: 'Roboto-bold';
     font-size: 1em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.menu-item-subtext {
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .menu-item-price {

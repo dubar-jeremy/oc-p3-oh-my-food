@@ -129,14 +129,15 @@ main {
 
 @keyframes slideup {
     from {
-      transform: translatey(20px);
-      opacity: 0%;
+        transform: translatey(20px);
+        opacity: 0%;
     }
+
     to {
-      transform: translatey(0px);
-      opacity: 100%;
+        transform: translatey(0px);
+        opacity: 100%;
     }
-  }
+}
 
 
 
@@ -161,7 +162,7 @@ main {
     background: var(--white);
     border-radius: 0.5em;
     overflow: hidden;
-   
+
 }
 
 .menu-text {
@@ -234,10 +235,47 @@ main {
     background: linear-gradient(162deg, #ff79da 0%, #9356dc 100%);
     width: 50%;
     white-space: nowrap;
-    border:none;
+    border: none;
     border-radius: 2em;
     box-shadow: rgb(149 157 165 / 20%) 0px 8px 24px;
     cursor: pointer;
     transition: 0.2s ease-in-out;
     margin: 1em 0;
+}
+
+
+@media (min-width: 1024px) {
+
+    header {
+        position: inherit;
+    }
+
+    .menu-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        position: inherit;
+        margin-top: inherit;
+    }
+
+    .menu-liste__title {
+        width: 100%;
+        margin-left: 2em;
+    }
+
+    .icon-empty, .icon-filled {
+        right: 97%;
+    }
+
+    .wrapper {
+        width: 30%;
+    }
+
+    .order-container {
+        width: 100%;
+    }
+
+    .order-btn {
+        width: 25%;
+    }
 }

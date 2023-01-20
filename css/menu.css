@@ -94,7 +94,7 @@ main {
 
 /* container "entrée/plat/desserts" */
 
-.menu-list__subtitle {
+.menu-category-title {
     font-family: "Roboto-light";
     font-size: 1em;
     position: relative;
@@ -102,7 +102,7 @@ main {
     margin-bottom: 1em;
 }
 
-.menu-list__subtitle::before {
+.menu-category-title::before {
     content: "";
     width: 75%;
     height: 5px;
@@ -114,7 +114,7 @@ main {
 
 
 
-.menu-item {
+.menu-card {
     display: flex;
     justify-content: space-between;
     margin: 1em 0;
@@ -142,19 +142,19 @@ main {
 
 
 /* Joue l'animation avec un délais de retard pour chaque item  */
-.menu-item:nth-child(2) {
+.menu-card:nth-child(2) {
     animation-delay: 500ms;
 }
 
-.menu-item:nth-child(3) {
+.menu-card:nth-child(3) {
     animation-delay: 600ms;
 }
 
-.menu-item:nth-child(4) {
+.menu-card:nth-child(4) {
     animation-delay: 700ms;
 }
 
-.menu-item-description {
+.menu-card-description {
     flex: 1;
     display: flex;
     padding: 1em;
@@ -165,19 +165,19 @@ main {
 
 }
 
-.menu-text {
+.menu-card-text {
     overflow: hidden;
     white-space: nowrap;
 }
 
-.menu-item-name {
+.menu-card-dish-name {
     font-family: 'Roboto-bold';
     font-size: 1em;
     overflow: hidden;
     text-overflow: ellipsis;
 }
 
-.menu-item-subtext {
+.menu-card-ingredients {
     overflow: hidden;
     text-overflow: ellipsis;
 }
@@ -190,7 +190,7 @@ main {
     font-family: 'Roboto-Bold';
 }
 
-.menu-item-icon-box {
+.menu-card-icon-container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -207,17 +207,17 @@ main {
     opacity: 0;
 }
 
-.menu-item:hover {
+.menu-card:hover {
     cursor: pointer;
 }
 
-.menu-item:hover .menu-item-icon-box {
+.menu-card:hover .menu-card-icon-container {
     background-color: var(--green);
     width: 5em;
 
 }
 
-.menu-item:hover .menu-item-check {
+.menu-card:hover .menu-item-check {
     transform: rotate(360deg);
     opacity: 1;
 }
@@ -267,7 +267,7 @@ main {
         right: 97%;
     }
 
-    .wrapper {
+    .menu-wrapper {
         width: 30%;
     }
 

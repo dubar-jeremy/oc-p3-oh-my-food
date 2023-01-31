@@ -1,0 +1,46 @@
+/* home  */
+
+.card-icon-filled {
+    opacity: 0;
+}
+
+.card-icon-empty:hover, .card-icon-filled:hover {
+    cursor: pointer;
+}
+
+.card-container-icon:hover .card-icon-empty {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+  
+.card-container-icon:hover .card-icon-filled {
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+    background-image: linear-gradient(162deg, var(--pink) 0%, var(--purple) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+/* menu */
+
+.icon-filled {
+    opacity: 0;
+}
+
+.icon-filled:hover {
+    cursor: pointer;
+}
+
+.menu-list-item-container:hover .icon-empty {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.menu-list-item-container:hover .icon-filled {
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+    background-image: linear-gradient(162deg, var(--pink) 0%, var(--purple) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+} 

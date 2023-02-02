@@ -197,6 +197,20 @@ header {
     padding-left: 0.2em;
 }
 
+.localisation {
+    background: none;
+    border: none;
+}
+
+.localisation::placeholder {
+    color: black;
+    font: 'Roboto-regular'
+}
+
+.validate {
+    display: none;
+}
+
 
 .card-icon-empty, .card-icon-filled {
     position: absolute;

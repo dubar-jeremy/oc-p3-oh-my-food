@@ -13,24 +13,24 @@
 /* Title */
 @font-face {
     font-family: 'Shrikhand';
-    src: url('/fonts/Shrikhand/Shrikhand-Regular.ttf') format('truetype');
+    src: url('../fonts/Shrikhand/Shrikhand-Regular.ttf') format('truetype');
 }
 
 /* Text */
 
 @font-face {
     font-family: 'Roboto-light';
-    src: url('/fonts/Roboto/Roboto-Light.ttf') format('truetype');
+    src: url('../fonts/Roboto/Roboto-Light.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'Roboto-regular';
-    src: url('/fonts/Roboto/Roboto-Regular.ttf') format('truetype');
+    src: url('../fonts/Roboto/Roboto-Regular.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'Roboto-bold';
-    src: url('/fonts/Roboto/Roboto-Bold.ttf') format('truetype');
+    src: url('../fonts/Roboto/Roboto-Bold.ttf') format('truetype');
 }
 
 

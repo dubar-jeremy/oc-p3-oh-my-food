@@ -99,6 +99,10 @@ header {
     background: #f5edff
 }
 
+.step:hover .icon-hover {
+    color: var(--purple)
+}
+
 .step__number {
     display: flex;
     justify-content: center;

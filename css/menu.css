@@ -102,8 +102,6 @@ main {
     margin: 1em 0;
     opacity: 0;
     animation: slideup 1s forwards;
-    animation-fill-mode: forwards;
-
 }
 
 /* Indique comment la propriété opacity doit etre modifiée au fil du temps de l'animation */
@@ -179,7 +177,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: transform 0.4s ease-in-out, width 0.4s ease-in-out, opacity 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
     width: 0;
     background-color: white;
     border-radius: 0 0.5em 0.5em 0em;

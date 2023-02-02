@@ -144,6 +144,7 @@ header {
     background: var(--white);
     border-radius: 1em 1em;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    transition: transform 0.5s ease-in-out;
 }
 
 .card:hover {
@@ -245,7 +246,6 @@ header {
         }
 
         .card:hover {
-            transition: 250ms ease-in-out ;
-            scale: 1.1;
+            transform: scale(1.2);
         }
 }
